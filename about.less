@@ -1,0 +1,19 @@
+@import 'main';
+
+#about {
+    background: url('assets/photography/brigid.jpg'); background-size: cover; background-position: center; padding: 8% 0 20%;
+    
+    .content {
+        color: @darkest-gray;width: 85%; margin: 0 5%; background-color: @white; padding: 3%; box-shadow: 0 0 20px @dark-gray; border-radius: 5px;
+        h1 {.uppercase; .bold; color: @darkest-gray; .font-48; font-family: 'Comfortaa'; margin: 20px 0 50px;}
+        h2 {font-family: 'Nothing You Could Do'; .font-40; margin: 40px 0 10px;}
+        p {font-family: 'Comfortaa'; .font-16; .light; line-height: 1.4; letter-spacing: 1px; margin-top: 0;}
+        ul {
+            width: 100%; margin: 0 auto; display: inline-block; margin-left: 0; padding-left: 0; margin-bottom: 30px;
+            li {list-style: none; .left-float; .text-center; padding: 10px 0; width: 50%; font-family: 'Comfortaa';}
+        }
+        @media only screen and (min-width: 1024px) {
+            width: 40%; margin: 0 0 0 5%;
+        }
+    }
+}

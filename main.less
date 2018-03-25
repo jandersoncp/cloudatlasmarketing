@@ -1,0 +1,108 @@
+@import 'global';
+body {
+    position: relative; height: 100%; min-height: 100%; .border-box;
+    nav {
+       padding: 15px 0; height: 90px; border-bottom: 3px solid #39393c; .center-margin; position: fixed; top: 0; .text-center; width: 100%; .border-box; background-color: #39393c; overflow: hidden; z-index: 10;
+        .logo {
+            .font-24; font-family: 'Open Sans'; color: @white; letter-spacing: 2px; .uppercase;
+            a {
+                text-decoration: none; color: @white; .light;
+                &:hover {color: @blue; transition: color 0.25s ease-in;}
+            }
+        }
+        .navbar {
+            font-family: 'Open Sans'; letter-spacing: 2px; .light; .inline-block; padding: 0; 
+            li {
+                list-style: none; .left-float; padding: 0 10px; text-align: center;
+                a {
+                    text-decoration: none; color: @white; .uppercase;
+                    &:hover {color: @blue; transition: color 0.25s ease-in;}
+                }
+            }
+        }
+    }
+    @media only screen and (min-width: 700px) {
+        nav { 
+            height: 80px; .text-left;
+            .logo {.inline-block; .left-float; margin: 14px 0; padding: 0 25px; .font-18;}
+            .navbar {.inline-block; .right-float; margin: 18px 0; padding: 0 25px;} 
+        }
+    }
+    section {
+        margin-top: 80px; 
+        .promo-block {
+            background-color: @white; padding: 50px 0; margin: 0 auto; text-align: center;
+            h2 {color: @dark-gray; font-family: 'Nothing You Could Do'; font-size: 66px; width: 75%; .center-margin; padding: 35px 0 0; letter-spacing: 2px; line-height: 1.1;}
+            span {.block; width: 75%; color: @dark-gray; font-family: 'Comfortaa'; font-size: 24px; .center-margin; .uppercase; padding: 25px 0 15px;}
+            p {color: @dark-gray; font-family: 'Nothing You Could Do'; .font-24; margin: 50px; line-height: 1.4;}
+            img {margin-bottom: 50px;}
+            .white-block {
+                background-color: rgba(255,255,255,.9); .center-margin; border-radius: 5px; padding: 15px; box-shadow: 0 0 20px @dark-gray;
+                @media only screen and (min-width: 600px) {
+                    width: 75%; padding: 50px;
+                }
+            }
+        }
+        #main-bg {
+            padding: 50px 0; margin: 0 auto; text-align: center; background: url(assets/photography/marketing.jpg); background-size: cover; background-repeat: no-repeat;
+            img {
+                .block; .center-margin; height: auto; width: 100%;
+                @media only screen and (min-width: 500px) {
+                    width: auto;
+                }
+            }
+            span {
+                .block; width: 100%; color: #39393c; font-family: 'Open sans'; font-size: 26px; letter-spacing: 2px;  .center-margin; .uppercase; padding: 25px 0;
+                @media only screen and (min-width: 800px) {
+                    width: 75%; .font-32; padding: 75px 0 25px;
+                }
+            }
+            h2 {
+                color: #39393c;font-family: 'Nothing You Could Do'; font-size: 33px;width: 100%; margin: 0 auto; padding: 35px 0px; letter-spacing: 2px; line-height: 1.1;
+                @media only screen and (min-width: 800px) {
+                    width: 75%; .font-32; padding: 35px 0px 75px; .font-48;
+                }
+            }
+            a {
+                text-decoration: none; color: @white; background-color: #39393c; padding: 20px 85px; .inline-block; font-family: 'Open Sans'; border-radius: 5px; margin: 25px 0;font-size: 22px; letter-spacing: 2px;
+                &:hover {background-color: @blue; transition: background-color 0.25s ease-in;}
+                @media only screen and (min-width: 800px) {
+                    padding: 20px 100px; 
+                }
+            }
+            @media only screen and (min-width: 700px) {
+                padding: 75px 0 125px; 
+            }
+            
+        }
+    }
+    footer {
+        background-color: #39393c; width: 100%; .text-center; padding: 50px 0;
+        .footer-block {
+            .inline-block; margin: 0 0 25px; font-family: 'Open Sans'; letter-spacing: 2px; .uppercase; color: @white; .font-18;
+            h3 {.light; .inline-block; padding: 0 25px 10px; border-bottom: 2px solid @white; margin-bottom: 30px;}
+            p {margin: 0; padding: 0 0 15px;}
+            a {
+                color: @white; text-decoration: none;
+                &:hover {color: @blue;}
+            }
+            ul {
+                margin: 0; padding: 0;
+                li {
+                    list-style: none; .inline-block; margin: 0 25px; .font-24;
+                    a {
+                        color: @white; 
+                        &:hover {color: @blue;}
+                    }
+                }
+            }
+        }
+        @media only screen and (min-width: 900px) {
+            width: 70%; .inline-block; position: relative; right: 0; bottom: 0; left: 0; padding: 0 15%; 
+            .footer-block {
+                width: 49%; margin: 65px 0; vertical-align: top;
+            }
+        }
+    }
+}
+

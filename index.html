@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Cloud Atlas</title>
+        <meta name="description" content="Cloud Atlas">
+        <link href="https://fonts.googleapis.com/css?family=Comfortaa|Open+Sans|Nothing+You+Could+Do" rel="stylesheet">
+        <link rel="stylesheet/less" href="main.less">
+        <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+        <script src="less.js"></script>
+        <script src="https://use.fontawesome.com/92c5a14062.js"></script>
+    </head>
+    <body>
+        <nav class="clearfix">
+            <div class="logo"><a href="/">Cloud Atlas Marketing</a></div>
+            <ul class="navbar">
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Involvement</a></li>
+            </ul>
+        </nav>
+        
+        <section>
+            <div class="promo-block" id="main-bg">
+                <div class="white-block">
+                    <img src="assets/big-blue.png" alt="Cloud Atlas Logo">
+                    <span>One great idea leads to another</span>
+                    <h2>Inspire revelation, create a revolution</h2>
+                    <a href="about.html">Learn More &raquo;</a>
+                </div>
+            </div>
+            
+        </section>
+        <footer>
+            <div class="footer-block">
+                <h3>Contact</h3>
+                <p>Email:
+                    <a href="mailto:brigidm@therootworkspace.com" class="open">brigidm@therootworkspace.com</a>
+                </p>
+            </div>
+            <div class="footer-block">
+                <h3>Social</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com/profile.php?id=100015867616197"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://twitter.com/@CloudAtlasArt"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="https://www.instagram.com/cloudatlasmarketing/"><i class="fa fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </footer>
+        <script>
+        function preloader() {
+            if (document.images) {
+                var img1 = new Image();
+                var img2 = new Image();
+
+                img1.src = "assets/big-blue.png";
+                img2.src = "assets/photography/marketing.jpg";
+            }
+        }
+        function addLoadEvent(func) {
+            var oldonload = window.onload;
+            if (typeof window.onload != 'function') {
+                window.onload = func;
+            } else {
+                window.onload = function() {
+                    if (oldonload) {
+                        oldonload();
+                    }
+                    func();
+                }
+            }
+        }
+        addLoadEvent(preloader);
+        </script>
+    </body>
+</html>

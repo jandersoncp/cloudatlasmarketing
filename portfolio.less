@@ -1,0 +1,89 @@
+@import 'main';
+
+.content {
+    .text-center;
+    .promo-block {
+        padding: 50px 0 5px;
+        h2 {.font-36; font-family: 'Comfortaa';}
+        p {margin-bottom: 25px;}
+    }
+    h2 {
+        font-family: 'Comfortaa'; .light; .uppercase; .font-24; .inline-block; padding: 0 0 15px; margin: 25px 25px 75px; color: #39393c;
+    }
+    .dropdowns {
+        ul {
+            padding: 0;
+            li {
+                list-style: none; .inline-block; margin: 25px 25px 10px; .font-20; font-family: 'Comfortaa'; .uppercase; border-bottom: 1px solid #39393c; padding-bottom: 10px;
+            }
+            .cursor {cursor: pointer;}
+            .clicked {
+                color: @blue; border-bottom: 1px solid @blue; position: relative;
+                &:after {.block; position: absolute; bottom: -7px; left: 50%; content: "."; height: 11px; width: 11px; margin-left: 4px; border: 1px solid @blue; border-width: 1px 0 0 1px; font-size: 0; line-height: 0; background-color: @white; transform: rotate(225deg); -webkit-transform: rotate(225deg); -ms-transform: rotate(225deg);}
+            }
+        }
+        .work-items {
+            .item {
+                .hide; margin: 0 0 50px; padding: 0;
+                &.active {.inline-block;}
+                li {
+                    list-style: none; .inline-block; margin: 15px 25px 25px; border: none;
+                    img {height: 215px; box-shadow: 0 0 20px @dark-gray; border-radius: 5px;}
+                }
+            }
+            #p4, #p5 {
+                li {
+                    a {
+                        color: @darkest-gray; text-decoration: none;
+                        .title {font-family: 'Nothing You Could Do'; text-transform: initial; .font-24;}
+                        .pub {.font-14;}
+                        &:hover {color: @blue; transition: color 0.25s ease-in;}
+                    }
+                }
+            }
+            #p5 {
+                li {
+                    vertical-align: middle;
+                    a {.block; margin-top: 15px;}
+                    img {height: auto;}
+                    #voa {background-color: @black; padding: 15px;}
+                }
+            }
+        }
+        
+    }
+    .resume {
+        .hide;
+        @media only screen and (min-width: 768px) {
+            .block; margin: 50px 0 0;
+        }
+    }
+    
+    #client-block {
+        width:100%; margin-bottom: 50px;
+        .right-block {
+            vertical-align: top;
+            h2 {.font-36; font-family: 'Comfortaa'; margin: 50px 0 0;}
+            ul {
+                padding: 0; .inline-block; .text-center;
+                li {
+                    list-style: none; width: 90%; margin: 50px auto;
+                    a { 
+                        color: #39393c; text-decoration: none; .inline-block;
+                        span {.block; font-family: 'Nothing You Could Do'; .font-28; .bold; margin: 0; width: 100%; text-transform: inherit; padding: 0;}
+                        img {width: 100%;}
+                        #voa {
+                            background-color: @black; padding: 15px 0;
+                            @media only screen and (min-width: 700px) {
+                                padding: 15px;
+                            }
+                        }
+                    }
+                    @media only screen and (min-width: 700px) {
+                        width: 50%; .left-float;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,81 @@
+@import 'normalize';
+
+/* Colors */
+@primary-color: @blue;
+@secondary-color: @dark-gray;
+@blue: #269eb0; 
+@purple: #5f0443;
+@light-gray: #bcbec0;
+@medium-gray: #ddddde;
+@dark-gray: #39393c; 
+@darker-gray: #58595B; 
+@darkest-gray: #000008; 
+@red: #b00f10;
+@white: #fff;
+@black: #000;
+
+/* Global fonts, font sizes, etc */
+@primary-font: @open-sans;
+@open-sans: 'Open Sans',arial,helvetica,sans-serif;
+@font-awesome: 'FontAwesome';
+@comfortaa: 'Comfortaa', arial, helvetica, sans-serif;
+
+.font-5 {font-size: 5px;}
+.font-8 {font-size: 8px;}
+.font-9 {font-size: 9px;}
+.font-10 {font-size: 10px;}
+.font-12 {font-size: 12px;}
+.font-13 {font-size: 13px;}
+.font-14 {font-size: 14px;}
+.font-15 {font-size: 15px;}
+.font-16 {font-size: 16px;}
+.font-17 {font-size: 17px;}
+.font-18 {font-size: 18px;}
+.font-20 {font-size: 20px;}
+.font-24 {font-size: 24px;}
+.font-27 {font-size: 27px;}
+.font-28 {font-size: 28px;}
+.font-30 {font-size: 30px;}
+.font-32 {font-size: 32px;}
+.font-34 {font-size: 34px;}
+.font-36 {font-size: 36px;}
+.font-38 {font-size: 38px;}
+.font-40 {font-size: 40px;}
+.font-48 {font-size: 48px;}
+.font-awesome {font-family: @font-awesome; text-rendering: auto; -webkit-font-smoothing: antialiased;}
+
+.light {font-weight: 300;}
+.normal {font-weight: 500;}
+.bold {font-weight: 700;}
+.italic {font-style: italic;}
+.uppercase {text-transform: uppercase;}
+.emphasize {.italic; .bold;}
+.underline {text-decoration: underline;}
+
+.text-center {text-align: center;}
+.text-left {text-align: left;}
+.text-right {text-align: right;}
+
+/*Block and inline styling*/
+.inline-block {display: inline-block;}
+.inline {display:inline;}
+.block {display: block;}
+.flex {display:flex; flex-direction: row;}
+.hide {display: none;}
+.invisible {visibility: hidden;}
+.visible {visibility: visible;}
+.border-box {box-sizing: border-box;}
+.center-margin {margin: 0 auto;}
+.sticky {position: fixed; top: 0; width: 100%;}
+
+/*Floats*/
+.left-float {float: left;}
+.right-float {float: right;}
+.float-none {float: none;}
+.clearfix {display: block; zoom: 1;
+    &:after {content: " "; display: block; font-size: 0; height: 0; clear: both; visibility: hidden;}
+}
+
+/* Animations and Transitions */ 
+.transition05 {transition: transform 0.5s;-webkit-transition: transform 0.5s;}
+.translate100 {transform: translate(100%, 0); -webkit-transform: translate(100%, 0); -moz-transform: translate(100%, 0); -ms-transform: translate(100%, 0); -o-transform: translate(100%, 0); .transition05;}
